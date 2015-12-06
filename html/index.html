@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>OP Replay</title>
+
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" >
+    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" >
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+<body id="top" class="scrollspy">
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo">OP Replay</a></div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+<div class="section no-pad-bot scrollspy" id="index-banner">
+    <div class="container" style="width: 100%">
+        <h1 class="text_h center header cd-headline letters type" style="padding-top: 5%">
+            <span>Record your</span> 
+            <span class="cd-words-wrapper waiting">
+                <b class="is-visible">wins</b>
+                <b>losses</b>
+                <b>good games</b>
+                <b>bad games</b>
+                <b>great plays</b>
+                <b>bronze moments</b>
+                <b>sick jukes</b>
+                <b>amazing outplays</b>
+            </span>
+        </h1>
+    </div>
+</div>
+
+<!--Intro and service-->
+<div id="intro" class="section scrollspy">
+    <div class="container">
+        <div class="row" style="padding-top: 5%">
+                <form class ="col s12" action="send.php" method="post">
+                    <div class="row">
+                        <div class="input-field col l5 s5">
+                            <input type="text" id="user" name="user">
+                            <label for="user">In-game Name</label>
+                        </div>
+
+                        <div class="input-field col l5 s3">
+                            <select name="region" id="region">
+                                <option value="na">NA</option>
+                                <option value="eune">EUNE</option>
+                                <option value="euw">EUW</option>
+                                <option value="br">BR</option>
+                                <option value="oce">OCE</option>
+                                <option value="lan">LAN</option>
+                                <option value="las">LAS</option>
+                                <option value="ru">RU</option>
+                                <option value="tr">TR</option>
+                            </select>
+                        </div>
+                        <div class="input-field col l2 s2">
+                            <button class="btn blue" type="submit" name="action">Submit<i class="mdi-content-send right"></i></button>
+                        </div>
+                    </div>
+                        
+                </form>
+        </div>
+        <div class="row" style="padding-top: 5%">
+            <div  class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-action-input"></i>
+                    <h5 class="promo-caption">You play League</h5>
+                    <p class="light center">Fire up League and play like normal.</p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-action-history"></i>
+                    <h5 class="promo-caption">Games Record Automatically</h5>
+                    <p class="light center">OP Replay will automatically check if you are playing and tell op.gg to record your game.</p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-action-theaters"></i>
+                    <h5 class="promo-caption">Watch Replays</h5>
+                    <p class="light center">Your replays will be saved by op.gg, ready for you to watch them whenever you want.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Work-->
+<div class="section scrollspy" id="faq">
+    <div class="container">
+        <div class="row">
+            <h4>FAQ:</h4>
+        </div>
+        <div class="row">
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header"><i class="mdi-action-info-outline"></i>How does this work?</div>
+                  <div class="collapsible-body"><p>OP Replay automatically checks accounts to see if they are in game and then requests a recording from op.gg</p></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="mdi-action-info-outline"></i>How can I watch a replay?</div>
+                  <div class="collapsible-body"><p>Head over to <a href="http://op.gg" target="_blank">op.gg</a> and search for the account you want to spectate. 
+                  If you check match history there should be a replay button for each match. Download the replay batch file and run.</p></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="mdi-action-info-outline"></i>Don't other programs that do this?</div>
+                  <div class="collapsible-body"><p>Unlike different replay programs, OP Replay automatically requests recordings of your games for you, without the need to download any software or register on the site. The only thing you ever have to download is the replay itself from op.gg if you want to watch it. However, there are plenty of other replay services out there, and you should use the one that works best for you.</p></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="mdi-action-info-outline"></i>Why donate?</div>
+                  <div class="collapsible-body"><p>Donations help pay for server costs and keep the site ad-free!</p></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color">
+    <div class="container">
+        <div class="row">
+            <div class="col l8 s8">
+                <p class="white-text">Created by James Quigley. This website is not affiliated with op.gg or Riot Games.</p>
+                <p class="white-text">Thanks to <a class="white-text" href="http://materializecss.com/">materializecss.</p>
+            </div>
+            <div class="col l4 s4" style="padding-top: 3%">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                    ">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright default_color">
+    </div>
+</footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+    </body>
+</html>
